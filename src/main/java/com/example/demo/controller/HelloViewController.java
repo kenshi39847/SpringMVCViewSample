@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 //コントローラのリクエストハンドラメソッドとURLをマッピングするには@RequestMappingアノテーションをクラスまたはメソッドに付与する
 //@RequestMappingアノテーションは様々な属性を指定できるが、基本的には「value」、「method」を指定する
-@RequestMapping("Hello")
+@RequestMapping("hello")
 public class HelloViewController {
 	
 	//@GetMappingは@RequestMappingのGETリクエスト用のアノテーションで、使用することで記述の省略と可読性の向上に繋がる
 	//「value」属性は使用できるが、「method」属性はない。
-	@GetMapping("View")
+	@GetMapping("view")
 	public String helloView() {
 		//戻り値はビュー名を返す
 		return "hello";
