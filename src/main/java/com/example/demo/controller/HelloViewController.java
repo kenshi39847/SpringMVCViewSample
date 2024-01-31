@@ -1,5 +1,9 @@
 package com.example.demo.controller;
 
+/*
+クライアントからURL「https://localhost:8080/hello/view」がGETメソッドで送信されると、
+「HelloViewController」クラスの「helloView」メソッドが呼ばれる。
+*/
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
